@@ -9,6 +9,7 @@ This folder contains `CreditCardAnomalyDetection.ipynb`, a complete unsupervised
   - Provides a one‑shot pinned install block and optional extras (lightgbm, xgboost, catboost, shap, plotly, etc.).
 - Data loading and preparation
   - Reads `/Users/spartan/Downloads/creditcard.csv`.
+  - Uses the ground‑truth label `Class` (1=fraud, 0=legit) only for evaluation, not for training features.
   - Optionally downsamples to ~60,000 rows for faster experiments.
 - PyCaret anomaly experiment
   - `setup(data=data, session_id=123, normalize=True, transformation=False, verbose=True)`
